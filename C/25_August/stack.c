@@ -39,7 +39,7 @@ typedef struct Stack{
 
 } Stack;
 
-int * buildStack(int n)
+void * buildStack(int n)
 {
     // Its the basic stack building where the arr is being allocated to memory as we want
 
