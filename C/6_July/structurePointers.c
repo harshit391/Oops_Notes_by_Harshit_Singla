@@ -13,7 +13,7 @@ int main()
     // pointers syntax
     // data_type * pointerName = &variable
     struct Student student1 = {"Harshit",391};
-    Stu student2 = {"Sajneet",1234};
+    Stu student2 = {"Keshav",1234};
 
     struct Student * student1ptr = &student1;
     Stu * student2ptr = &student2;
@@ -23,7 +23,7 @@ int main()
 
     // * dereferencing a structure
 
-    strcpy((*student1ptr).name,"Keshav");
+    strcpy((*student1ptr).name,"Nikhil");
 
     printf("%s\n",student1ptr->name);
     return 0;

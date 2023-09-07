@@ -13,7 +13,7 @@ int main()
 
 
     // It will just print the value in abc.txt file i.e store our value in txt file
-    fprintf(fptr, "%s" ,"Sajneet");
+    fprintf(fptr, "%s" ,"Keshav");
 
     // Tells us the position of seek 
     // printf("%d\n",ftell(fptr));

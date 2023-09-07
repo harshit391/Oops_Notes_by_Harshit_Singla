@@ -8,7 +8,7 @@ typedef struct Student{
 
 void changeName(struct Student student1)
 {
-    strcpy(student1.name, "Sajneet");
+    strcpy(student1.name, "Keshav");
     printf("%s\n",student1.name);
 
 }

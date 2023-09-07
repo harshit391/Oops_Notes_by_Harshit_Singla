@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // #define A 5
-#ifdef A
+#ifdef A /* Intended Error displayed on terminal , Intentional from user not from system */
     #error Further compilation won't happen
 #endif
 
