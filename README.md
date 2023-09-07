@@ -8,3 +8,7 @@ Just want to help as much people possible
 
 For any Guidance or Doubts - 
 Instgram :- harshitsingla1761
+
+Index of Notes :- 
+https://docs.google.com/spreadsheets/d/1mZi6ea0R7io62seUYlrJsLt7xZgduhfqOZpPHgRBP9o/edit?usp=sharing
+
