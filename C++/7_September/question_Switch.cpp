@@ -4,6 +4,12 @@
 // If more than 80 Excellent
 // Else Fail
 
+// Switch can only check a particular case not some conditional case 
+
+// The value is pre planned that this will surely come 
+
+// Where as in conditions multiple values are being checked which is not possible in switch
+
 using namespace std;
 
 int main()
@@ -13,11 +19,6 @@ int main()
 
     int k=0;
 
-    // if (n > 80) cout << "Excellent";
-
-    // else if (n >= 30) cout << "Passed";
-
-    // else cout << "Failed";
 
     if (n > 30) k=1;
 
