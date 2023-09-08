@@ -11,7 +11,7 @@ class Car{
     // We have to keep the price private so that no one should have power to change it
     // So we kept price in private block which make it accessible only in the Car class 
 
-private:
+private: /* Private , public , protected are access specifiers */ 
     int price = 100;
 
     // But like the seller company should have access to the discount So we create seperate functions to set discount in public block
