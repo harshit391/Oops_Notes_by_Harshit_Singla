@@ -1,4 +1,24 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+// Pascal Triangle :-
+
+// if n = 5
+
+// Then Traingle will be
+
+// 1
+// 1 1
+// 1 2 1
+// 1 3 3 1
+// 1 4 6 4 1
+
+// Proper Simulation to show what is Pascal Triangle 
+
+// Leetcode Problem :- 118
+// https://leetcode.com/problems/pascals-triangle/
+
 
 int main()
 {
