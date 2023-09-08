@@ -72,7 +72,7 @@ int precedence(char ch) {
     }
 }
 
-// Main Function which probides infix expresion
+// Main Function which provides prefix expresion
 void infixToPrefix(char infix[], char prefix[]){
     
     Stack st1;  st1.arr = buildStack(1000); // Give the value of maximum constraint
