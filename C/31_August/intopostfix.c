@@ -114,7 +114,7 @@ void infixToPostfix(char infix[], char postfix[]){
 			// Otherwise if the stack is not empty
 			else{
 				// Check if the precendence of operator at top of stack is more than the current operator from infix
-				if (!empty(&st1) && (precedence(top(&st1)) >= precedence(infix[i])))
+				if (!empty(&st1) && (precedence(top(&st1)) > precedence(infix[i])))
 				{
 					// Append that operator in postfix and remove that operator from stack
 					char t = top(&st1);
