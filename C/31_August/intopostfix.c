@@ -72,7 +72,7 @@ int precedence(char ch) {
     }
 }
 
-
+// Main Function which evaluate the expression from infix to postfix
 void infixToPostfix(char infix[], char postfix[]){
 	Stack st1 = {-1}; /* Initializing the stack with last = -1 index*/
 	st1.arr = buildStack(10); //1000 // arg should be length of infix
