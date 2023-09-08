@@ -34,6 +34,8 @@ int empty(Stack * st1){
 
 /* -------------------------------------- STACK IMPLEMENTATION START -------------------------------------*/
 
+
+// For Prefix we have to reverse a String 
 void reverseString(char str[]) {
     int length = 0;
     while (str[length] != '\0') {
@@ -48,6 +50,9 @@ void reverseString(char str[]) {
     }
 }
 
+// Check if the character is alphabet , digit or operator
+
+// If the character is operator return 0 else return 1
 int alphaNum(char ch){
     if(ch >= 'a' && ch <= 'z') return 1;
     if(ch >= 'A' && ch <= 'Z') return 1;
@@ -55,6 +60,7 @@ int alphaNum(char ch){
     return 0;
 }
 
+// Create a Precedence Table for all operators
 int precedence(char ch) {
     switch(ch) {
         case '^': return 4;
@@ -66,44 +72,71 @@ int precedence(char ch) {
     }
 }
 
+// Main Function which probides infix expresion
 void infixToPrefix(char infix[], char prefix[]){
-    Stack st1;  st1.arr = buildStack(1000); // correct argument should be the length of the array
-    st1.last = -1;
+    
+    Stack st1;  st1.arr = buildStack(1000); // Give the value of maximum constraint
+
+    st1.last = -1; // Initialize stack with last equal to -1 index
+
     int i = 0, j = 0;
-    reverseString(infix); // so we need to reverse the input infix expression
+    reverseString(infix); // so we need to reverse the infix expression for getting prefix expression
+
+    // Untill we get termination chracter from infix run the loop
     while(infix[i]!='\0'){
+
+        // If current character is not an operator then append it in the prefix 
         if(alphaNum(infix[i])){
             prefix[j++] = infix[i++];
         }
+
+        // If current character is closing bracket the just push it in the stack
         else if(infix[i] == ')'){
             push(&st1,infix[i]);
             i++;
         }
+        
+        // But if the current character is opening bracket then untill we get closing bracket 
+        // append all the elements in stack in prefix untill it get empty or we get closing bracket
+
         else if(infix[i] == '('){
             while(!empty(&st1) && top(&st1) != ')'){
                 char t = top(&st1);
                 prefix[j++] = t;
                 pop(&st1);
             }
+            // POp the closing closing bracket and increment i
             pop(&st1);
             i++;
         }
+
+        // Now if the character is an operator 
         else{
+            // Check the precedence 
+
+            // If precedence of character at top of stack is greater or equal to precedence of current character  
             while(!empty(&st1) && precedence(top(&st1)) >= precedence(infix[i])){
+
+                // Remove that operator from stack and add it to prefix array
                 char t = top(&st1);
                 prefix[j++] = t;
                 pop(&st1);
             }
+            // At last push the current operator to stack
             push(&st1, infix[i++]);
         }
     }
+    // At Last if something left in stack then just add it to prefix array
     while(!empty(&st1)){
         char t = top(&st1);
         prefix[j++] = t;
         pop(&st1);
     }
+    // At last index where our prefix ended set value at that index to termination character to make that string end
     prefix[j] = '\0';
-    reverseString(prefix); // now we need to reverse again
+
+    // Reverse the string again and we get the result
+    reverseString(prefix); 
 }
 
 int main(){
