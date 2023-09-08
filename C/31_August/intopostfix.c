@@ -112,8 +112,8 @@ void infixToPostfix(char infix[], char postfix[]){
 
 int main(){
 	// Bracket --> Exp --> mul --> Div/Mod --> Add/Sub
-	// char infix[] = "(a+(b*c/d))"; // abc*d/+, //ab+c*d/ , // abc*d/+
-	char infix[] = "2+3^(4-(1+2)^2+((3-2)*4)+3)";
+	char infix[] = "(a+(b*c/d))"; // abc*d/+, //ab+c*d/ , // abc*d/+
+	// char infix[] = "2+3^(4-(1+2)^2+((3-2)*4)+3)";
 	char postfix[100];
 	infixToPostfix(infix, postfix);
 	printf("%s\n", postfix);
