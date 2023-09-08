@@ -63,8 +63,8 @@ int alphaNum(char ch){
 // Precedence Table to track the precedence of the operators easily
 int precedence(char ch) {
     switch(ch) {
-        case '^': return 4; /* ^ has the highest precedence*/
-        case '*': return 3;
+        case '^': return 3; /* ^ has the highest precedence*/
+        case '*': 
         case '/': return 2;
         case '+':
         case '-': return 1; /* - has the lowest precedence */
