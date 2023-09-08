@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* -------------------------------------- STACK IMPLEMENTATION START -------------------------------------*/
+
 typedef struct Stack{
     int last;
     int * arr;
@@ -29,6 +31,8 @@ int top(Stack * st1){
 int empty(Stack * st1){
     return st1 -> last == -1;
 }
+
+/* -------------------------------------- STACK IMPLEMENTATION START -------------------------------------*/
 
 void reverseString(char str[]) {
     int length = 0;

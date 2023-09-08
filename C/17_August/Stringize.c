@@ -18,7 +18,7 @@ int main()
     print(PI); //=> PI
     printf("\n");
 
-    greet(Harshit,Sajneet);
+    greet(Harshit,Keshav);
     printf("\n");
 
     return 0;
