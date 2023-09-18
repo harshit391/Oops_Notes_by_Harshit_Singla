@@ -27,7 +27,7 @@ int main()
     // Declaring an array
     int arr[5] = {1,2,3,4,5};
 
-    // By default arr gives address of its 0 index block
+    // By default, arr gives address of its 0 index block
     cout << arr << endl;
 
     // It will help us to access the value at address of 0 index block which is its first element
@@ -54,7 +54,7 @@ int main()
     // It will work normally
     cout << ch << endl;
 
-    // But in this Something unfamiliar happens because it will print character itself but we can't able to fetch its address
+    // But in this Something unfamiliar happens because it will print character itself, but we can't able to fetch its address
     cout << &ch << endl;
 
     // Instead of this we can print it like this
