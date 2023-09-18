@@ -14,7 +14,7 @@ using namespace std;
 7 8 9
 
 Printing like this 1 2 3 6 9 8 7 4 5
-* /
+*/
 
 int main()
 {
