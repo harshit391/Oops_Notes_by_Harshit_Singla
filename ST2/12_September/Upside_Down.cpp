@@ -25,7 +25,7 @@ int main()
     }
 
     cout << endl;
-    // Column Wise Print
+    // Column Wise Print but when the row is odd print from last in that specific row
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)

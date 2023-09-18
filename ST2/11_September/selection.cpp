@@ -6,9 +6,11 @@ using namespace std;
  * Selection Sort
  *
  * It is based on selecting current element of array
- * then Traversing backwards from that point of index where the element is present
- * IF element is less than element keep shifting them from left to right
- * And when encountered the a number which is less than the selected element set that element to index+1
+ * then Traversing from that point of index where the element is present
+ * We set a minimum to current index
+ * IF element is less than element at minimum index set the minimum index to that index
+ * And when encountered the a number which is less than the selected element
+ * Swap the minimum index element to the element selected before starting traversing
  */
 
 int main()
