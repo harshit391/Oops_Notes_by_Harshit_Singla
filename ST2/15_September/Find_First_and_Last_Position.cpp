@@ -39,12 +39,10 @@ int main()
 
         else start = mid + 1;
     }
-
     int i=0;
     int k = found+1;
     int temp = found;
     int j = n-1;
-
     int startposition = -1;
     int endposition = -1;
 
