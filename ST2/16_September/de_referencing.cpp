@@ -57,6 +57,9 @@ int main()
     // But in this Something unfamiliar happens because it will print character itself but we can't able to fetch its address
     cout << &ch << endl;
 
+    // Instead of this we can print it like this
+    cout << (int *)&ch << endl;
+
     return 0;
 
 }
