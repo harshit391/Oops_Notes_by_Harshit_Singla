@@ -12,7 +12,7 @@ int main()
 
     int * aptr = &a;
 
-    cout << aptr + 1 << endl; // => Gives size of next block
+    cout << aptr + 1 << endl; // => Gives Starting address of next block where this aptr is being stored
 
     return 0;
 }
