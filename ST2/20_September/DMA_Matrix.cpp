@@ -52,12 +52,20 @@ int main()
         cout << endl;
     }
 
+    // But always remember to free that memory from heap because heap keep that memory occupied
+    // And as we don't need that memory we delete from the heap
     for (int i=0;i<n;i++){
         delete[] arr[i];
+
+        // Now the pointer we made start pointing to something garbage and may be create a problem
+        // So After deletion of memory from pointer make that pointer NULL
         arr[i] = nullptr;
     }
 
+    // At last as we created a array for keeping pointers
     delete[] arr;
+
+    // Delete that array make that pointer NULL too
     arr = nullptr;
 
     return 0;
