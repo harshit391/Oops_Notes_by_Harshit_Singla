@@ -20,7 +20,10 @@ int main()
 
     int n = sizeof(arr)/sizeof(int);
 
-    cout << find(arr,0,n,7);
+    int target;
+    cin >> target;
+
+    cout << find(arr,0,n,target);
 
     return 0;
 }
