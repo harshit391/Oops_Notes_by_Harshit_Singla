@@ -8,11 +8,11 @@ using namespace std;
 
 int sorted(int arr[], int idx)
 {
-    if (idx==0) return 1;
+    if (idx==0 || idx==1) return 1;
 
-    if (arr[idx-1] > arr[idx]) return 0;
+    if (arr[idx-1] > arr[idx-2] && sorted(arr, idx-1)) return 1;
 
-    return sorted(arr, idx-1);
+    else return 0;
 }
 
 int main()
