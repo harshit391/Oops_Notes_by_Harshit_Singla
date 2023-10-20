@@ -84,7 +84,7 @@ int main()
 
     if (startposition==-1) startposition = found;
 
-    cout << "Start Position :- " << startposition << " End Position :- " << endposition << endl;
+    cout << startposition << " " << endposition << endl;
 
     return 0;
 

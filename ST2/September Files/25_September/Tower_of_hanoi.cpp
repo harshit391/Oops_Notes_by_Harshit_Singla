@@ -13,7 +13,7 @@ void towerofhanoi(int n,char source,char helper,char destination) {
 
     towerofhanoi(n - 1, source, destination, helper);
 
-    cout << "place " << n << "th plate from " << source << " to " << destination << endl;
+    cout << "Moving ring " << n << " from " << source << " to " << destination << endl;
 
     towerofhanoi(n - 1, helper, source, destination);
 }
@@ -21,6 +21,6 @@ int main()
 {
     int n;
     cin>>n;
-    towerofhanoi(n,'a','b','c');
+    towerofhanoi(n,'A','C','B');
     return 0;
 }
