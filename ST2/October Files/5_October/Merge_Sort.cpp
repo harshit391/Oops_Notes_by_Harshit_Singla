@@ -12,8 +12,9 @@ void conquer(int start, int mid, int end, int * arr, int n) {
     int idx3 = 0;
 
     while (start < mid && mid < end) {
-        if (arr[idx1] > arr[idx2])
-        arr2[idx3++] = arr[idx1++];
+        if (arr[idx1] > arr[idx2]) {
+            arr2[idx3++] = arr[idx1++];
+        }
 
         else if (arr[idx1] < arr[idx2]) {
             arr[]

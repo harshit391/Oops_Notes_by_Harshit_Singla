@@ -2,7 +2,22 @@
 // Created by DELL on 12/09/2023.
 //
 
-//Print Matrix Column Wise but every even column is printed inverted
+//Print Matrix Column Wise but every adjacent column is printed inverted
+
+/*
+m n
+3 3
+
+Matrix Input
+1 2 3
+4 5 6
+7 8 9
+
+Matrix Output
+1 4 7
+8 5 2
+3 6 9
+*/
 
 #include <iostream>
 

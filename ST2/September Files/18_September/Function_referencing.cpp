@@ -18,7 +18,7 @@ void incrementbyreference(int *a,int *b){
 
 int main(){
     int a = 1,b=2;
-    // This will not update value because it works like a sepeartion
+    // This will not update value because it works like a separation
     incrementbyvalue(a,b);
     cout<< a <<" "<< b <<endl;
 

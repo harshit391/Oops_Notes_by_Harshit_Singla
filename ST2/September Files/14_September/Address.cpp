@@ -28,7 +28,7 @@ int main()
 
     char * chptr = &ch; // Compiler always give some wrong address for character pointer
 
-    cout << (int *)chptr << endl; // Now it will give address
+    cout << (int *)chptr << endl; // Now it will give right address
 
     return 0;
 }
