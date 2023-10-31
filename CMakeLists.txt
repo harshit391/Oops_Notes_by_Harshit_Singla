@@ -74,4 +74,6 @@ add_executable(Oops_Notes_by_Harshit_Singla
         ST2/11_September/Arrays2.cpp
         ST2/11_September/bubble_sort.cpp
         ST2/11_September/find_minimum.cpp
+        "ST2/October Files/9_October/1_Dog.cpp"
+        "ST2/October Files/9_October/1_Dog.cpp"
 )
