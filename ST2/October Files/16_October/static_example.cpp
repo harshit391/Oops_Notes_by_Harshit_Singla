@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//
 class Employee{
 private:
 	char name[100];

@@ -2,6 +2,14 @@
 // Created by DELL on 17/10/2023.
 //
 
+/*
+ * As the Destructor name suggests , It Destroys the class
+ *
+ * When all the work of main function being executed
+ * So just before the main function got pop from stack
+ * Class got destroyed by the use of destructor
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
