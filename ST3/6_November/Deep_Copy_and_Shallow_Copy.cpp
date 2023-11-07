@@ -21,9 +21,18 @@ public:
         seats = s;
     }
 
+    // Deep Copy - To Copy made by Developer
+    Car(Car &c1) {
+        name = new char[strlen(c1.name)+1];
+        strcpy(name, c1.name);
+        price = c1.price;
+        mileage = c1.mileage;
+        seats = c1.seats;
+    }
+
+    // Shallow Copy  - By Default made by Compiler
 //    Car(Car &c1) {
-//        name = new char[strlen(c1.name)+1];
-//        strcpy(name, c1.name);
+//        name = c1.name;
 //        price = c1.price;
 //        mileage = c1.mileage;
 //        seats = c1.seats;
