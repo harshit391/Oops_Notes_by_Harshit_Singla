@@ -18,9 +18,14 @@ public:
     int * price;
     int * seats;
 
+    // Its just that we passing parameters as references
     Car(char * n , int p, int m, int s) {
+
+        // Allocating Memory Dynamically by use of 'new' keyword
         name = new char[strlen(n)+1];
         strcpy(name, n);
+
+        // By use of (variable) we can directly assign the reference of value block to the variable
         mileage = new int(m);
         price = new int(p);
         seats = new int(s);
@@ -28,6 +33,9 @@ public:
 
     void display() {
         cout << "Name :- " << name << endl;
+
+        // To access values of these
+        // We first need to de-reference them
         cout << "Mileage :- " << *mileage << endl;
         cout << "Price :- " << *price << endl;
         cout << "Seats :- " << *seats << endl;

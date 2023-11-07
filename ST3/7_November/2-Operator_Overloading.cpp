@@ -23,23 +23,33 @@ public:
         imag = i;
     }
 
+    /*
+     * As we overloaded the constructor to accept one parameter only
+     * So If we call object by only one parameter It will accept this constructor automatically
+     */
     explicit Complex(int r) {
         cout << endl << "Second Constructor Used which take only real value" << endl;
         real = r;
         imag = 0;
     }
 
+    /*
+     * Overloading the - operator to work in our way
+     */
     Complex operator-() const {
         cout << endl << "Subtraction Constructor Used which returns Complex Multiplied by -1" << endl;
         return {-real, -imag};
     }
 
     Complex operator++(int) {
+        // Int shows that we are having variable behind ++ to make post increment work
+        // Only Post will work in this way Pre will not
         cout << endl << "Post Increment Constructor Used" << endl;
         return {++real, ++imag};
     }
 
     Complex operator++() {
+        // In normal Pre words Post don't work
         cout << endl << "Pre Increment Constructor Used" << endl;
         return {++real, ++imag};
     }

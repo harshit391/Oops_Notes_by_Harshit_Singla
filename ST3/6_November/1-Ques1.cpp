@@ -2,6 +2,16 @@
 // Created by DELL on 06/11/2023.
 //
 
+/*
+ * Implement Car Class
+ *
+ * Private :
+ * Name, Mileage, Price, Seats
+ *
+ * Public:
+ * Constructor to Assign Values
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;

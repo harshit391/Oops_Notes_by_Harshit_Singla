@@ -2,6 +2,24 @@
 // Created by DELL on 06/11/2023.
 //
 
+/*
+ * Shallow Copy
+ *
+ * Shallow copy creates a new object and copies the values of the original object into it.
+ * However, if the original object contains references to other objects,
+ * the shallow copy will simply copy those references.
+ * This means that the new object and the original object will share the same underlying data.
+ * Its Like Two Variables have references to one block of data
+ *
+ * Deep Copy
+ *
+ * Deep copy creates a new object and copies the values of the original object into it,
+ * including any references to other objects.
+ * This means that the new object will have its own copy of all the data,
+ * and the new object and the original object will not share any underlying data.
+ * Now Both Objects Point to their respective separate references
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -45,6 +63,7 @@ public:
         cout << "Seats :- " << seats << endl;
     }
 
+    // Normal Class Destructor If you remember
     ~Car() {
         delete[] name;
         name = nullptr;

@@ -36,9 +36,12 @@ public:
         return {real * X.real - imag * X.imag, real * X.imag - imag * X.real};
     }
 
-    // Incomplete
     Complex operator/(Complex X) const {
-        return {real + X.real, imag + X.imag};
+        int deno = X.real * X. real + X.imag * X.imag;
+        int new_real = (real * X.real - imag * X.imag)/deno;
+        int new_imag = (real * X.imag - imag * X.real)/deno;
+        return {new_real, new_imag};
+
     }
 
     void display() const {
