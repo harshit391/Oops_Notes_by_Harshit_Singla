@@ -40,7 +40,5 @@ int main() {
     Time t3 = t1 + t2;
     t3.printTime();
 
-
-
-
+    return 0;
 }
