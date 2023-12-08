@@ -1,3 +1,0 @@
-C:/Users/DELL/CLionProjects/Oops_Notes_by_Harshit_Singla/cmake-build-debug/CMakeFiles/Oops_Notes_by_Harshit_Singla.dir
-C:/Users/DELL/CLionProjects/Oops_Notes_by_Harshit_Singla/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/DELL/CLionProjects/Oops_Notes_by_Harshit_Singla/cmake-build-debug/CMakeFiles/rebuild_cache.dir
