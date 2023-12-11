@@ -38,5 +38,7 @@ int main() {
 
     cout << res << endl;
 
+    delete[] arr;
+
     return 0;
 }

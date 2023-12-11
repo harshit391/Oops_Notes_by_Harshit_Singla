@@ -3,7 +3,9 @@ project(Oops_Notes_by_Harshit_Singla)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(ST1/C++/6_September)
+include_directories(ST1)
+include_directories(ST2)
+
 
 add_executable(Oops_Notes_by_Harshit_Singla
         ST1/C/17_August/bit_fields.c
@@ -70,10 +72,18 @@ add_executable(Oops_Notes_by_Harshit_Singla
         ST1/C++/8_September/Methods_and_Members.cpp
         ST1/C++/8_September/pascal_triangle.cpp
         ST1/C++/8_September/Structs_vs_Classes.cpp
-        ST2/11_September/Arrays.cpp
-        ST2/11_September/Arrays2.cpp
-        ST2/11_September/bubble_sort.cpp
-        ST2/11_September/find_minimum.cpp
         "ST2/October Files/9_October/1_Dog.cpp"
         "ST2/October Files/9_October/1_Dog.cpp"
+        ST1/C/31_August/intopostfix.c
+        ST1/C/31_August/intopostfix.c
+        ST1/C/31_August/intopostfix.c
+        ST1/C/1_September/InfixToPostFix_Evaluation.c
+        ST1/C/1_September/InfixToPrefix_Evaluation.c
+        ST1/C/1_September/InfixToPrefix_Evaluation.c
+        ST1/C/1_September/InfixToPrefix_Evaluation.c
+        "ST2/September Files/11_September/Arrays.cpp"
+        "ST2/September Files/11_September/Arrays2.cpp"
+        "ST2/September Files/11_September/bubble_sort.cpp"
+        "ST2/September Files/11_September/find_minimum.cpp"
+        "ST2/September Files/11_September/selection.cpp"
 )

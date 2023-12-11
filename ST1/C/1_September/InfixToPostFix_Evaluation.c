@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 #define MAX_SIZE 100
 
@@ -41,20 +39,20 @@ void infixToPostfix(char infix[], char postfix[]) {
     int top = -1;
     int i, j = 0;
 
-    //  Untill the current character is termination character
+    //  Until the current character is termination character
     for (i = 0; infix[i] != '\0'; i++) {
 
-        // If current character is a alphabet or digit append it in postfix
+        // If current character is an alphabet or digit append it in postfix
         if (alphaNum(infix[i])) {
             postfix[j++] = infix[i];
         } 
         
-        // If we encounter a opening bracket append it in stack
+        // If we encounter an opening bracket append it in stack
         else if (infix[i] == '(') {
             stack[++top] = infix[i];
         } 
         
-        // If comes a closing bracket untill we get opening bracket from stack 
+        // If it comes a closing bracket until we get opening bracket from stack
         else if (infix[i] == ')') {
 
             // append the operators in postfix
@@ -123,7 +121,7 @@ int evaluatePostfix(char postfix[]){
                     break;
                 case '^':
                     result = 1;
-                    // Basically inbuilt pow function doesn't gives desired values that's why loop is made to calculate power
+                    // Basically inbuilt pow function doesn't give desired values that's why loop is made to calculate power
                     for(int j = 0; j < operand2; j++) {
                         result *= operand1;
                     }

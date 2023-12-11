@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 // Implement Circular Queue using array in c
 
@@ -9,17 +8,17 @@
 
 // Operations to be made to Implement CircularQueue ------->
 
-// As the queue is circular so if the our pointer moves greater than total size 
+// As the queue is circular so if the pointer moves greater than total size
 // Then we should decrement them in such a way that it points to correct index
 
 // For example
 
-// A queue of of size 4 
+// A queue of size 4
 // So index 4 represent 0 index as the queue is circular
 
 // Hence is we modulus operator 
 // So when the queue is at index 4 
-// It decrement as 4 % total size of queue
+// It decrements as 4 % total size of queue
 // So 4 % 4 = 0
 // Hence it directed to its correct Index
 
@@ -29,7 +28,7 @@
 
 // In push operations
 
-// We pushing elements from back
+// We're pushing elements from back
 // So we have to increment back in such a way that if we are accessing index out of length bound
 // Then it still points to correct index as mentioned above
 
@@ -39,7 +38,7 @@
 // In pop Operations
 
 // We poping elements from front
-// So we have to increment fron in such a way that if we are accessing index out of length bound
+// So we have to increment front in such a way that if we are accessing index out of length bound
 // Then it still directs to correct index as mentioned above
 
 // So front becomes (front + 1) % total size of queue
@@ -66,7 +65,7 @@ typedef struct Queue
 
 void Initialize(Queue * q)
 {
-    // Intializing queue
+    // Initializing queue
 
     // Setting up front and back to -1 as initially the queue is empty
     q->front = -1;
@@ -84,17 +83,17 @@ void push(Queue * q, int data)
     // To push something in queue
 
     // If queue is full we can't add more elements so return
-    if (q->current_size == q->total_size)
-    return;
+    if (q->current_size == q->total_size) {
+        return;
+    }
 
     // If queue is empty then set front to 0 as there will be one element after push operation 
-    if (q->current_size == 0)
-    {
+    if (q->current_size == 0 ) {
         q->front = 0;
     }
     
     // Increment the back position as we know queue add elements at the back 
-    // But as queue is circular so we have to take modulus of it with total size of queue
+    // But as queue is circular, so we have to take modulus of it with total size of queue
     // So that it get directed to correct index even when index reaches out of bounds
 
     q->back = (q->back + 1)%q->total_size;
@@ -123,15 +122,15 @@ void pop(Queue * q)
     }
     else 
     {
-        // Otherwise increament front index
+        // Otherwise increment front index
         // Means indirectly we can't access that element anymore so in any words we had removed it indirectly
-        // But as queue is circular so we have to take modulus of it with total size of queue
+        // But as queue is circular, so we have to take modulus of it with total size of queue
         // So that it get directed to correct index even when index reaches out of bounds
 
         q->front = (q->front + 1)%q->total_size;
     }
     
-    // Yeah Decrease the current size by 1 
+    // Yeah, Decrease the current size by 1
     q->current_size--;
 }
 
@@ -154,7 +153,7 @@ int front(Queue * q)
     if (q->current_size == 0)
     {
         // If size of queue is 0 then just return maximum number possible in integer
-        return 2147483648;
+        return 2147483647;
     }
     // Else return element present on front index in array working as queue
     return q->arr[q->front];
@@ -179,13 +178,13 @@ int main()
 
     for (int i=0;i<n;i++)
     {
-        // Push some number uptill size n
+        // Push some number until size n
         int x ;
         scanf("%d", &x);
         push(&que, x);
     }
 
-    // Print the queue to check whether its working or not
+    // Print the queue to check whether It's working or not
     while (!empty(&que))
     {
         printf("%d ",front(&que));
